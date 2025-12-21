@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>DEUKA | Handmade Luxury</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuka | Handmade Woolen Boutique</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="DEUKA">
-<h1>DEUKA</h1>
-  <p>Handcrafted with warmth & love</p>
-  <a href="#shop" class="btn">Shop Collection</a>
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-text">
+    <h1>Deuka</h1>
+    <p>Handcrafted Woolen Luxury</p>
+    <a href="#shop" class="btn">Shop Collection</a>
+  </div>
 </header>
 
+<!-- PRODUCTS SECTION -->
 <section id="shop" class="products">
-
   <div class="product">
-    <img src="muffler.jpg">
-    <h3>MUFFLER</h3>
-    <p> Lovely • Handmade</p>
+    <img src="muffler.jpg" alt="Wool Muffler">
+    <h3>Wool Muffler</h3>
+    <p>Soft & Warm Handmade Wool</p>
     <button onclick="order('Wool Muffler')">Buy Now</button>
   </div>
 
+  <div class="product">
+    <img src="bag.jpg" alt="Handcrafted Wool Bag">
+    <h3>Handcrafted Wool Bag</h3>
+    <p>Elegant & Sustainable</p>
+    <button onclick="order('Handcrafted Wool Bag')">Buy Now</button>
+  </div>
+
+  <div class="product">
+    <img src="resin.jpg" alt="Resin Art Decor">
+    <h3>Resin Art Decor</h3>
+    <p>Unique Handmade Art</p>
+    <button onclick="order('Resin Art Decor')">Buy Now</button>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2025 DEUKA Hand Made Boutique
-         THANK YOU FOR VISITING OUR SITE! </p>
+  <p>© 2025 Deuka • Handmade Woolen Boutique</p>
 </footer>
 
+<!-- WHATSAPP SCRIPT -->
 <script>
 function order(product) {
-  const phone = "916002378185"; // your number with country code
+  const phone = "916002378185"; // 🔴 Replace with your WhatsApp number
   const message = "I want to order " + product;
-  const url ="https://wa.me/916002378185?text=" + encodeURIComponent(message);
+  const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
   window.open(url, "_blank");
 }
 </script>
