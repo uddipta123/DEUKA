@@ -19,8 +19,30 @@ body {
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: bold;
+  width: 120px;      /* Desktop size */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .logo {
+    width: 100px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo {
+    width: 80px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .logo {
+    width: 65px;
+  }
 }
 
 .logo span {
