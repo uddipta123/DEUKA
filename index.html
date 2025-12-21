@@ -23,11 +23,17 @@
 <section class="hero">
   <div class="hero-text">
     <h1>Trendy<br>Youthful</h1>
-    <p>Woolen store</p>
+    <p>Spreading Love To
+       All Over 🌍</p>
     <button>Shop Now</button>
     <button class="outline">Learn More</button>
   </div>
   <img src="images/hero-shoe.png" alt="Product">
+</section>
+
+<section id="products">
+  <h2>Featured Products</h2>
+  <button onclick="learnMore()">Learn More</button>
 </section>
 
 <!-- FEATURED -->
@@ -69,6 +75,15 @@
 <footer>
   <p>© 2025 Pure Handmade | Spreading❤️</p>
 </footer>
+  
+<script>
+function learnMore() {
+  document.getElementById("products").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+  
   <!-- WHATSAPP SCRIPT -->
 <script>
 function order(product) {
