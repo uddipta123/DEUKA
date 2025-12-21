@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: Light violet , White;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fff8f0, #ffe6d4);
 }
 
 .hero {
@@ -44,15 +44,23 @@ body {
   text-align: center;
 }
 
-.product img {
-  width: 100%;
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+
 }
 
 button {
   margin-top: 10px;
   padding: 10px;
-  background: black;
+  background: #fb641b; /* bright orange */
   color: white;
   border: none;
   width: 100%;
+  cursor: pointer;
 }
