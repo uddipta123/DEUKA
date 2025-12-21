@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loomella | Handmade Luxury</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Loomella</h1>
+  <p>Handcrafted with warmth & love</p>
+  <a href="#shop" class="btn">Shop Collection</a>
+</header>
+
+<section id="shop" class="products">
+
+  <div class="product">
+    <img src="muffler.jpg">
+    <h3>Wool Muffler</h3>
+    <p>Soft • Warm • Handmade</p>
+    <button onclick="order('Wool Muffler')">Buy Now</button>
+  </div>
+
+  <div class="product">
+    <img src="bag.jpg">
+    <h3>Handcrafted Wool Bag</h3>
+    <p>Elegant • Sustainable</p>
+    <button onclick="order('Wool Bag')">Buy Now</button>
+  </div>
+
+  <div class="product">
+    <img src="resin.jpg">
+    <h3>Resin Art Decor</h3>
+    <p>Unique • Artistic</p>
+    <button onclick="order('Resin Art')">Buy Now</button>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2025 Loomella • Handmade Boutique</p>
+</footer>
+
+<script>
+function order(product) {
+  window.location.href =
+  "https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20" + product;
+}
+</script>
+
+</body>
+</html>
