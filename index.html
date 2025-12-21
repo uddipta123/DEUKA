@@ -2,73 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Winter Store</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuka | Handmade Woolen Boutique</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.top-bar{
+  background:#f5f5f5;
+  height:35px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:0 30px;
+  font-size:12px;
+}
+
+.top-bar a{
+  text-decoration:none;
+  color:#111;
+  margin:0 6px;
+}
+
+.navbar
+  {
+      height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 30px;
+  background:#fff;
+}
+
+.nav-center{
+  display:flex;
+  gap:20px;
+}
+
+.nav-center a{
+  text-decoration:none;
+  color:#111;
+  font-size:14px;
+}
+
+.nav-right{
+  display:flex;
+  gap:16px;
+}
+</style>
+      
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">WINTER<span>STORE</span></div>
-  <nav>
+<!-- HERO SECTION -->
+<header class="hero">
+  
+ <!-- TOP INFO BAR -->
+   <div class="top-bar">
+     <div class="top-right">
+        <a href="#">Find a Store</a>
+        <span>|</span>
+        <a href="#">Help</a>
+        <span>|</span>
+        <a href="#">Join Us</a>
+        <span>|</span>
+        <a href="#">Sign In</a>
+     </div>
+</div>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" alt="Deuka Logo" class="logo">
+  </div>
+
+  <nav class="nav-center">
+    <a href="#">New & Featured</a>
     <a href="#">Men</a>
     <a href="#">Women</a>
     <a href="#">Kids</a>
-    <a href="#">Gifts</a>
+    <a href="#">Sale</a>
+    <a href="#">Portraits</a>
   </nav>
+
+  <div class="nav-right">
+    <span class="icon">🔍</span>
+    <span class="icon">♡</span>
+    <span class="icon">🛒</span>
+  </div>
+</header>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>STOCKING<br>STUFFER</h1>
-    <p>Warm woolen collections for winter season</p>
-    <button>Shop Now</button>
-    <button class="outline">Learn More</button>
+<!-- PRODUCTS SECTION -->
+<section id="shop" class="products">
+  <div class="product">
+    <img src="muffler.jpg" alt="Wool Muffler">
+    <h3>Wool Muffler</h3>
+    <p>Soft & Warm Handmade Wool</p>
+    <button onclick="order('Wool Muffler')">Buy Now</button>
   </div>
-  <img src="images/hero-shoe.png" alt="Product">
-</section>
 
-<!-- FEATURED -->
-<section class="featured">
-  <h2>Featured</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="muffler.png">
-      <h3>Woolen Muffler</h3>
-      <p>₹899</p>
-      <button>Shop</button>
-    </div>
-    <div class="card">
-      <img src="images/shoe2.png">
-      <h3>Winter Sweater</h3>
-      <p>₹1999</p>
-      <button>Shop</button>
-    </div>
-    <div class="card">
-      <img src="images/shoe3.png">
-      <h3>Flower Bouquet</h3>
-      <p>₹699</p>
-      <button>Shop</button>
-    </div>
+  <div class="product">
+    <img src="bag.jpg" alt="Handcrafted Wool Bag">
+    <h3>Handcrafted Wool Bag</h3>
+    <p>Elegant & Sustainable</p>
+    <button onclick="order('Handcrafted Wool Bag')">Buy Now</button>
   </div>
-</section>
 
-<!-- CATEGORIES -->
-<section class="categories">
-  <h2>Shop by Category</h2>
-  <div class="category-grid">
-    <div class="category">🧣 Mufflers</div>
-    <div class="category">🧥 Woolen Wear</div>
-    <div class="category">💐 Bouquets</div>
+  <div class="product">
+    <img src="resin.jpg" alt="Resin Art Decor">
+    <h3>Resin Art Decor</h3>
+    <p>Unique Handmade Art</p>
+    <button onclick="order('Resin Art Decor')">Buy Now</button>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Handmade Boutique | Made with ❤️</p>
+  <p>© 2025 Deuka • Handmade Woolen Boutique</p>
 </footer>
+
+<!-- WHATSAPP SCRIPT -->
+<script>
+function order(product) {
+  const phone = "916002378185"; // 🔴 Replace with your WhatsApp number
+  const message = "I want to order " + product;
+  const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
+
+
