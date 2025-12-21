@@ -1,2 +1,2 @@
-# LOOMELLA
+# DEUKA
 Handmade woolen items for day today useses!
