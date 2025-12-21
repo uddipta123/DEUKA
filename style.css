@@ -131,3 +131,92 @@
     font-size:40px;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.featured {
+  padding: 40px;
+}
+
+.featured h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+.card.light::after {
+  background: none;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+  color: white;
+}
+
+.card-content.dark-text {
+  color: black;
+}
+
+.small {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin: 6px 0 12px;
+}
+
+.card-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  opacity: 0.8;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 280px;
+  }
+}
