@@ -1,2 +1,2 @@
-# Loomella
-Handmade wool and resin art store
+# LOOMELLA
+Handmade woolen items for day today useses!
