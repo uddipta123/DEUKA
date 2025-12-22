@@ -1,4 +1,4 @@
-function order(product) {
+function order(Shop,ShopNow) {
   const phone = "916002378185";
   const message = "I want to order: " + product;
   const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
@@ -9,15 +9,15 @@ function order(product) {
 const searchIcon = document.getElementById("searchIcon");
 const searchBox = document.getElementById("searchBox");
 
-searchIcon.onclick = () => {
+searchIcon.onclick = (SearchBar) => {
   searchBox.style.display =
     searchBox.style.display === "block" ? "none" : "block";
 };
 
 
-let cart = [];
+let cart = [AddtoCart];
 
-function addToCart(productName) {
+function AddtoCart(productName) {
   cart.push(productName);
   alert(productName + " added to cart");
   console.log(cart);
