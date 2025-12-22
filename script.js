@@ -48,3 +48,19 @@ function signIn() {
     alert("Invalid login");
   }
 }
+
+
+
+
+const countryBtn = document.getElementById("countryBtn");
+const countryList = document.getElementById("countryList");
+
+countryBtn.onclick = () => {
+  countryList.style.display =
+    countryList.style.display === "block" ? "none" : "block";
+};
+
+function selectCountry(country) {
+  countryBtn.innerHTML = "🌍 " + country;
+  countryList.style.display = "none";
+}
