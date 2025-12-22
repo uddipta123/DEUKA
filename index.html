@@ -1,113 +1,64 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HAND MADE BOUTIQUE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-    body{background:#fff;color:#111}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}/* Top bar */
-.topbar{font-size:12px;text-align:center;padding:8px;background:#f5f5f5}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deuka | Handmade Store</title>
 
-/* Navbar */
-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:10}
-nav{display:flex;gap:20px;font-weight:500}
-.icons{display:flex;gap:15px;font-size:18px}
-
-/* Hero slider */
-.hero{position:relative;overflow:hidden}
-.slide{display:none;align-items:center;justify-content:center;min-height:60vh;background:#eee}
-.slide.active{display:flex}
-.hero-content{position:absolute;text-align:center;color:#fff}
-.hero-content h1{font-size:48px;font-weight:800}
-.hero-content p{margin:10px 0}
-.btn{padding:10px 18px;border-radius:20px;border:none;font-weight:600;cursor:pointer}
-.btn.white{background:#fff;color:#000}
-
-/* Sections */
-section{padding:40px 20px}
-h2{margin-bottom:20px}
-
-/* Product grid */
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{border:1px solid #eee;padding:15px}
-.card h4{margin-top:10px;font-size:15px}
-.price{font-weight:600;margin-top:5px}
-
-/* Icon shop */
-.icons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.icon-card{position:relative;border-radius:12px;overflow:hidden}
-.icon-card span{position:absolute;bottom:15px;left:15px;color:#fff;font-weight:700}
-
-/* Featured */
-.featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.featured-card{position:relative}
-.featured-card .overlay{position:absolute;bottom:20px;left:20px;color:#fff}
-
-/* Footer */
-footer{background:#f5f5f5;padding:40px 20px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;font-size:14px}
-.footer-grid h4{margin-bottom:10px}
-.copyright{text-align:center;margin-top:20px;font-size:12px;color:#666}
-
-/* Responsive */
-@media(max-width:768px){
-  nav{display:none}
-  .hero-content h1{font-size:32px}
-}
-
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>  <div class="topbar">10% Import Tax Reduction Discount with code: BOUTIQUE65</div>  <header>
-    <strong>DEUKA</strong>
-    <nav>
-      <a href="#">New & Featured</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">Kids</a>
-      <a href="#">Sale</a>
-    </nav>
-    <div class="icons">🔍 🤍 👜</div>
-  </header> 
-  <!-- Hero --> 
-  <div class="hero">
-    <div class="slide active" style="background:url('Boukey.jpg') center/cover"></div>
-    <div class="hero-content">
-      <h1>woollen</h1>
-      <p>No one celebrates the festive season like the King.</p>
-      <button class="btn white">Coming Soon</button>
-      <button class="btn white">Learn More</button>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-right">
+    <a href="#">Find a Store</a>
+    <span>|</span>
+    <a href="#">Help</a>
+    <span>|</span>
+    <a href="#">Join Us</a>
+    <span>|</span>
+    <a href="#">Sign In</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Deuka">
+  </div>
+
+  <nav class="nav-center">
+    <a href="#">New & Featured</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+    <a href="#">Sale</a>
+    <a href="#">SNKRS</a>
+  </nav>
+
+  <div class="nav-icons">
+    <span>🔍</span>
+    <span>♡</span>
+    <span>🛒</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="shoe.jpg" alt="Hero Product">
+
+  <div class="hero-text">
+    <h1>STOCKING<br>STUFFER</h1>
+    <p>No one celebrates the festive season like the King.</p>
+
+    <div class="hero-btns">
+      <button>Coming Soon</button>
+      <button class="outline">Learn More</button>
     </div>
-  </div>  <!-- Products -->  <section>
-    <h2>Refresh Your Woollen Rotation</h2>
-    <div class="products">
-      <div class="card"><img src="muffler.jpg"><h4>MUFFLER</h4><p class="price">₹ 695</p></div>
-      <div class="card"><img src="bag.jpg"><h4>WOOLLEN BAG</h4><p class="price">₹ 695</p></div>
-      <div class="card"><img src="kettytoy.jpg"><h4>KETTYTOY</h4><p class="price">₹ 495</p></div>
-    </div>
-  </section>  <!-- Shop by Icons -->  <section>
-    <h2>Shop by Icons</h2>
-    <div class="icons-grid">
-      <div class="icon-card"><img src="bluemuffler.jpg"><span>BLUE MUFFLER</span></div>
-      <div class="icon-card"><img src="bluemuffler1.jpg"><span>BLUE MUFFLER</span></div>
-      <div class="icon-card"><img src="portraitphoto.jpg"><span>PORTRAIT PHOTO</span></span></div>
-    </div>
-  </section>  <!-- Featured -->  <section>
-    <h2>Featured</h2>
-    <div class="featured">
-      <div class="featured-card"><img src="boygirlmuffler2.jpg"><div class="overlay"><h3>Classic Look</h3><button class="btn white">Shop</button></div></div>
-      <div class="featured-card"><img src="kettytoy.jpg"><div class="overlay"><h3>TABLE Decore</h3><button class="btn white">Shop</button></div></div>
-    </div>
-  </section>  <!-- Footer -->  <footer>
-    <div class="footer-grid">
-      <div><h4>Resources</h4><p>Find a Store</p><p>Become a Member</p></div>
-      <div><h4>Help</h4><p>Order Status</p><p>Delivery</p></div>
-      <div><h4>Company</h4><p>About Deuka</p><p>Join Us</p></div>
-    </div>
-    <div class="copyright">© 2025 DEUKA, Inc. All rights reserved</div>
-  </footer></body>
+  </div>
+</section>
+
+</body>
 </html>
