@@ -20,6 +20,7 @@
     <a href="#">Join Us</a>
     <span>|</span>
     <a href="#">Sign In</a>
+    <a onclick="signIn()">Sign In</a>
   </div>
 </div>
 
@@ -47,6 +48,8 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#">Sign In</a>
+  <a onclick="signIn()">Sign In</a>
+  
   <a href="#">Join Us</a>
   <a href="#">Find a Store</a>
   <a href="#">Help</a>
@@ -162,6 +165,19 @@
     <div class="footer-country">
       🌍 India
     </div>
+    <div class="country-selector">
+  <button id="countryBtn">🌍 India</button>
+
+  <div class="country-list" id="countryList">
+    <p onclick="selectCountry('India')">🇮🇳 India</p>
+    <p onclick="selectCountry('United States')">🇺🇸 United States</p>
+    <p onclick="selectCountry('United Kingdom')">🇬🇧 United Kingdom</p>
+    <p onclick="selectCountry('Canada')">🇨🇦 Canada</p>
+    <p onclick="selectCountry('Australia')">🇦🇺 Australia</p>
+    <p onclick="selectCountry('Germany')">🇩🇪 Germany</p>
+    <p onclick="selectCountry('Japan')">🇯🇵 Japan</p>
+  </div>
+</div>
   </div>
 
   <hr>
