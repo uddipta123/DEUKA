@@ -29,3 +29,22 @@ function addToWishlist(item) {
   wishlist.push(item);
   alert("Added to wishlist");
 }
+const menuIcon = document.getElementById("menuIcon");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuIcon.onclick = () => {
+  mobileMenu.style.display =
+    mobileMenu.style.display === "block" ? "none" : "block";
+};
+
+function signIn() {
+  const phone =prompt("Enter phone number");
+  const email = prompt("Enter email");
+  const password = prompt("Enter password");
+
+  if (email && password) {
+    alert("Signed in as " + email);
+  } else {
+    alert("Invalid login");
+  }
+}
