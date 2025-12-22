@@ -74,6 +74,26 @@
   font-size:12px;
   text-decoration:underline;
 }
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
 
 
 /* HERO */
