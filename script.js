@@ -37,7 +37,7 @@ menuIcon.onclick = () => {
     mobileMenu.style.display === "block" ? "none" : "block";
 };
 
-function signIn() {
+function signIn(details) {
   const phone =prompt("Enter phone number");
   const email = prompt("Enter email");
   const password = prompt("Enter password");
