@@ -15,7 +15,7 @@ searchIcon.onclick = (SearchBar) => {
 };
 
 
-let cart = [AddtoCart];
+let cart = [addtocart];
 
 function AddtoCart(productName) {
   cart.push(productName);
@@ -25,7 +25,7 @@ function AddtoCart(productName) {
 
 let wishlist = [];
 
-function addToWishlist(item) {
+function addtowiahliat(item) {
   wishlist.push(item);
   alert("Added to wishlist");
 }
