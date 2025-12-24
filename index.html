@@ -1,64 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deuka | Handmade Store</title>
+  <meta charset="UTF-8">
 
-<link rel="stylesheet" href="style.css">
+  <!-- IMPORTANT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DEUKA – Handmade Boutique & Art Creations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <div class="top-right">
-    <a href="#">Find a Store</a>
-    <span>|</span>
-    <a href="#">Help</a>
-    <span>|</span>
-    <a href="#">Join Us</a>
-    <span>|</span>
-    <a href="#">Sign In</a>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">
-    <img src="logo.png" alt="Deuka">
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <p>Find a Store | Help | Join Us | Sign In</p>
   </div>
 
-  <nav class="nav-center">
-    <a href="#">New & Featured</a>
-    <a href="#">Men</a>
-    <a href="#">Women</a>
-    <a href="#">Kids</a>
-    <a href="#">Sale</a>
-    <a href="#">SNKRS</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">DEUKA</div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Handmade Art</a></li>
+      <li><a href="#">Wool Collection</a></li>
+      <li><a href="#">Custom Orders</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <span>🔍</span>
+      <span>♡</span>
+      <span>🛒</span>
+    </div>
   </nav>
 
-  <div class="nav-icons">
-    <span>🔍</span>
-    <span>♡</span>
-    <span>🛒</span>
+  <!-- Announcement -->
+  <div class="announcement">
+    <p>
+      Handcrafted with love – Custom orders available
+      <span>Terms & Conditions</span>
+    </p>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="shoe.jpg" alt="Hero Product">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <small>DEUKA HANDMADE BOUTIQUE</small>
+      <h1>ART THAT FEELS LIKE HOME</h1>
+      <p>Unique wool & art creations made by hand</p>
 
-  <div class="hero-text">
-    <h1>STOCKING<br>STUFFER</h1>
-    <p>No one celebrates the festive season like the King.</p>
-
-    <div class="hero-btns">
-      <button>Coming Soon</button>
-      <button class="outline">Learn More</button>
+      <div class="hero-buttons">
+        <button class="btn primary">Explore Collection</button>
+        <button class="btn secondary">Learn More</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Small JS for Mobile Menu -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
+
+<!-- Featured Section -->
+<section class="featured">
+  <h2 class="section-title">Featured</h2>
+
+  <div class="featured-grid">
+
+    <div class="featured-card">
+      <img src="bag.jpg" alt="">
+      <div class="featured-text">
+        <small>Handmade Wool</small>
+        <h3>BAG</h3>
+        <button>Shop</button>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="kettytoy.jpg" alt="">
+      <div class="featured-text">
+        <small>Woollen And Soft</small>
+        <h3>KETTY TOY</h3>
+        <button>Shop</button>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="portraitphoto.jpg" alt="">
+      <div class="featured-text">
+        <small>Decor & Gifts</small>
+        <h3>PORTRAIT PHOTO</h3>
+        <button>Shop</button>
+      </div>
+    </div>
+
+    <div class="featured-card light">
+      <img src="muffler.jpg" alt="">
+      <div class="featured-text dark">
+        <small>Limited Pieces</small>
+        <h3>MUFFLER</h3>
+        <button>Shop</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Luxury Products Section -->
+<section class="luxury-products">
+  <div class="luxury-header">
+    <h2>Refresh Your Space with Handmade Art</h2>
+    <a href="#">Shop</a>
+  </div>
+
+  <div class="product-row">
+
+    <div class="product-card">
+      <img src="bluemuffler.jpg" alt="">
+      <h4>Handwoven Woollen Muffler</h4>
+      <p>Stories in every Thread</p>
+      <span>₹ 659</span>
+    </div>
+
+    <div class="product-card">
+      <img src="bluemuffler1.jpg" alt="">
+      <h4>Soft = warm</h4>
+      <p>Handcrafted Muffler</p>
+      <span>₹ 699</span>
+    </div>
+
+    <div class="product-card">
+      <img src="portraitphoto.jpg" alt="">
+      <h4>Portrait Art Frame</h4>
+      <p>Custom Art Piece</p>
+      <span>₹ 599</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <p class="newsletter-tag">SIGN UP FOR DEUKA UPDATES</p>
+
+  <h2>
+    Get exclusive updates on new handmade collections,
+    custom art launches and DEUKA’s latest creations.
+  </h2>
+
+<p class="newsletter-tag">THANKYOU FOR VISITING DEUKA HANDMADE BOUTIQUE</p>
+
+  
+  <a href="#" class="subscribe-btn">+ Subscribe</a>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <!-- Links -->
+    <div class="footer-links">
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Find a Store</a>
+        <a href="#">Custom Orders</a>
+        <a href="#">Product Care</a>
+        <a href="#">Handmade Guide</a>
+        <a href="#">Feedback</a>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <a href="#">Get Help</a>
+        <a href="#">Order Status</a>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Contact Support</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">About DEUKA</a>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Report a Concern</a>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <div class="footer-login">
+      <h4>Member Sign In</h4>
+      <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+      <input type="tel" placeholder="Phone Number">
+      <button>Sign In</button>
+    </div>
+
+    <!-- Country -->
+    <div class="footer-country">
+      <span>🌍 Country</span>
+      <select>
+        <option>India</option>
+        <option>United States</option>
+        <option>United Kingdom</option>
+        <option>Australia</option>
+        <option>Canada</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 DEUKA. All rights reserved.</p>
+
+    <div class="footer-bottom-links">
+      <a href="#">Guides</a>
+      <a href="#">Terms of Sale</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Privacy Settings</a>
+    </div>
+  </div>
+
+</footer>
